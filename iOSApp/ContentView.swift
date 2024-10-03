@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var alertIsVisible = false
     @State var sliderValue = 50.0
+    @State var game = Game()
     var body: some View {
         ZStack {
             Color("BackgroundColor").ignoresSafeArea()
@@ -17,7 +18,7 @@ struct ContentView: View {
                 Text("🎯🎯🎯🎯")
                     .font(.largeTitle)
                     .padding(.bottom)
-                Text("89")
+                Text("\(game.target)")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .tracking(/*@START_MENU_TOKEN@*/-1.0/*@END_MENU_TOKEN@*/)
@@ -26,7 +27,7 @@ struct ContentView: View {
                     alertIsVisible = true
                 }.alert(isPresented: $alertIsVisible){
                     Alert(title: Text("Congratulations"),
-                          message: Text("The slider values is \(Int(sliderValue.rounded()))"),
+                          message: Text("The slider value is \(Int(sliderValue.rounded())) \n You scored \(game.points(sliderValue: Int(sliderValue.rounded()))) points \n 🎉🎉🎉🎉"),
                           dismissButton:.default(Text("OK")){
                         print("Alert Ok button tapped")
                     })
