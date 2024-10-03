@@ -13,7 +13,7 @@ struct ContentView: View {
     @State var game = Game()
     var body: some View {
         ZStack {
-            BackgroundView()
+            BackgroundView(game: $game)
             VStack {
                 Text("🎯🎯🎯🎯")
                     .font(.largeTitle)
@@ -24,10 +24,12 @@ struct ContentView: View {
                     .tracking(/*@START_MENU_TOKEN@*/-1.0/*@END_MENU_TOKEN@*/)
                 SliderView(value: $sliderValue, minValue: 0, maxValue: 100)
                 Button("Try"){
+                    game.points(sliderValue: Int(sliderValue.rounded()))
                     alertIsVisible = true
+                    
                 }.alert(isPresented: $alertIsVisible){
                     Alert(title: Text("Congratulations"),
-                          message: Text("The slider value is \(Int(sliderValue.rounded())) \n You scored \(game.points(sliderValue: Int(sliderValue.rounded()))) points \n 🎉🎉🎉🎉"),
+                          message: Text("The slider value is \(Int(sliderValue.rounded())) \n You scored \(game.points) points \n 🎉🎉🎉🎉"),
                           dismissButton:.default(Text("OK")){
                         print("Alert Ok button tapped")
                     })

@@ -15,6 +15,7 @@
 		F5EDBD202CAEB64D0019DE02 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD1F2CAEB64D0019DE02 /* RoundedImageView.swift */; };
 		F5EDBD222CAEB8D70019DE02 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD212CAEB8D70019DE02 /* BackgroundView.swift */; };
 		F5EDBD242CAEB9420019DE02 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD232CAEB9420019DE02 /* NumberView.swift */; };
+		F5EDBD282CAEC2720019DE02 /* MarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD272CAEC2720019DE02 /* MarksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F5EDBD1F2CAEB64D0019DE02 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		F5EDBD212CAEB8D70019DE02 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		F5EDBD232CAEB9420019DE02 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		F5EDBD272CAEC2720019DE02 /* MarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				F5EDBD1F2CAEB64D0019DE02 /* RoundedImageView.swift */,
 				F5EDBD212CAEB8D70019DE02 /* BackgroundView.swift */,
 				F5EDBD232CAEB9420019DE02 /* NumberView.swift */,
+				F5EDBD272CAEC2720019DE02 /* MarksView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				F5EDBD222CAEB8D70019DE02 /* BackgroundView.swift in Sources */,
 				F5EDBD202CAEB64D0019DE02 /* RoundedImageView.swift in Sources */,
+				F5EDBD282CAEC2720019DE02 /* MarksView.swift in Sources */,
 				F5EDBD0E2CAE8F6E0019DE02 /* ContentView.swift in Sources */,
 				F5EDBD1C2CAEB3830019DE02 /* Game.swift in Sources */,
 				F5EDBD0C2CAE8F6E0019DE02 /* iOSAppApp.swift in Sources */,
