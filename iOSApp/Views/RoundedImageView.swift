@@ -15,6 +15,7 @@ struct RoundedImageView: View {
                 .frame(width: 56, height: 56)
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .overlay(Circle().stroke())
+                .foregroundColor(Color("ButtonColor"))
         }
     }
 }

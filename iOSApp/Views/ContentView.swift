@@ -31,7 +31,8 @@ struct ContentView: View {
                     Alert(title: Text("Congratulations"),
                           message: Text("The slider value is \(Int(sliderValue.rounded())) \n You scored \(game.points) points \n 🎉🎉🎉🎉"),
                           dismissButton:.default(Text("OK")){
-                        print("Alert Ok button tapped")
+                        game.restart()
+                        sliderValue = 50.0
                     })
                 }
                 .padding(.all, 20.0)

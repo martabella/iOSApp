@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct MarksView: View {
+    var game:Game
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
-        Text("Marks View")
+        VStack {
+            HStack {
+                Text("Marks".uppercased())
+                    .font(.title)
+                    .fontWeight(.bold)
+                Spacer()
+                Button("Close"){
+                    presentationMode.wrappedValue.dismiss()
+                }
+            }
+            Spacer()
+        }.padding()
     }
 }
 
 #Preview {
-    MarksView()
+    MarksView(game: Game())
 }

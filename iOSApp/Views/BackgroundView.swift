@@ -9,13 +9,15 @@ import SwiftUI
 
 struct BackgroundView: View {
     @Binding var game:Game
-    
+    @State var markIsVisible = false
     var body: some View {
         VStack {
             HStack{
                 RoundedImageView(imageName: "arrow.clockwise")
                 Spacer()
-                RoundedImageView(imageName: "list.dash")
+                Button(action: {markIsVisible = true}){
+                    RoundedImageView(imageName: "list.dash")
+                }
             }
             Spacer()
             HStack{
@@ -25,6 +27,9 @@ struct BackgroundView: View {
             }
         }.padding()
             .background(Color("BackgroundColor"))
+            .sheet(isPresented: $markIsVisible){
+                MarksView(game: game)
+            }
             
     }
 }
