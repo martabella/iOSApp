@@ -13,7 +13,7 @@ struct ContentView: View {
     @State var game = Game()
     var body: some View {
         ZStack {
-            Color("BackgroundColor").ignoresSafeArea()
+            BackgroundView()
             VStack {
                 Text("🎯🎯🎯🎯")
                     .font(.largeTitle)

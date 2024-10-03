@@ -11,6 +11,10 @@
 		F5EDBD0E2CAE8F6E0019DE02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD0D2CAE8F6E0019DE02 /* ContentView.swift */; };
 		F5EDBD102CAE8F710019DE02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EDBD0F2CAE8F710019DE02 /* Assets.xcassets */; };
 		F5EDBD132CAE8F710019DE02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EDBD122CAE8F710019DE02 /* Preview Assets.xcassets */; };
+		F5EDBD1C2CAEB3830019DE02 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD1B2CAEB3830019DE02 /* Game.swift */; };
+		F5EDBD202CAEB64D0019DE02 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD1F2CAEB64D0019DE02 /* RoundedImageView.swift */; };
+		F5EDBD222CAEB8D70019DE02 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD212CAEB8D70019DE02 /* BackgroundView.swift */; };
+		F5EDBD242CAEB9420019DE02 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD232CAEB9420019DE02 /* NumberView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		F5EDBD0D2CAE8F6E0019DE02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F5EDBD0F2CAE8F710019DE02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5EDBD122CAE8F710019DE02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5EDBD1B2CAEB3830019DE02 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		F5EDBD1F2CAEB64D0019DE02 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		F5EDBD212CAEB8D70019DE02 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		F5EDBD232CAEB9420019DE02 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				F5EDBD0B2CAE8F6E0019DE02 /* iOSAppApp.swift */,
-				F5EDBD0D2CAE8F6E0019DE02 /* ContentView.swift */,
+				F5EDBD262CAEBD120019DE02 /* Model */,
+				F5EDBD252CAEBD090019DE02 /* Views */,
 				F5EDBD0F2CAE8F710019DE02 /* Assets.xcassets */,
 				F5EDBD112CAE8F710019DE02 /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				F5EDBD122CAE8F710019DE02 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5EDBD252CAEBD090019DE02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5EDBD0D2CAE8F6E0019DE02 /* ContentView.swift */,
+				F5EDBD1F2CAEB64D0019DE02 /* RoundedImageView.swift */,
+				F5EDBD212CAEB8D70019DE02 /* BackgroundView.swift */,
+				F5EDBD232CAEB9420019DE02 /* NumberView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5EDBD262CAEBD120019DE02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5EDBD1B2CAEB3830019DE02 /* Game.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5EDBD222CAEB8D70019DE02 /* BackgroundView.swift in Sources */,
+				F5EDBD202CAEB64D0019DE02 /* RoundedImageView.swift in Sources */,
 				F5EDBD0E2CAE8F6E0019DE02 /* ContentView.swift in Sources */,
+				F5EDBD1C2CAEB3830019DE02 /* Game.swift in Sources */,
 				F5EDBD0C2CAE8F6E0019DE02 /* iOSAppApp.swift in Sources */,
+				F5EDBD242CAEB9420019DE02 /* NumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +306,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iOSApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Guess;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +336,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iOSApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Guess;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
