@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    let a = 34
+    @State var alertIsVisible = false
+    @State var sliderValue = 50.0
     var body: some View {
         ZStack {
             Color("BackgroundColor").ignoresSafeArea()
@@ -20,14 +21,15 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .tracking(/*@START_MENU_TOKEN@*/-1.0/*@END_MENU_TOKEN@*/)
-                Slider(value: .constant(50), in: 0...100){
-                } minimumValueLabel: {
-                    Text("0")
-                } maximumValueLabel: {
-                    Text("100")
-                }.fontWeight(.bold)
+                SliderView(value: $sliderValue, minValue: 0, maxValue: 100)
                 Button("Try"){
-                    print("tapped Try")
+                    alertIsVisible = true
+                }.alert(isPresented: $alertIsVisible){
+                    Alert(title: Text("Congratulations"),
+                          message: Text("The slider values is \(Int(sliderValue.rounded()))"),
+                          dismissButton:.default(Text("OK")){
+                        print("Alert Ok button tapped")
+                    })
                 }
                 .padding(.all, 20.0)
                 .background(Color("AccentColor"))
@@ -43,4 +45,18 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+
+struct SliderView: View {
+    @Binding var value:Double
+    let minValue:Double
+    let maxValue:Double
+    var body: some View {
+        Slider(value: $value, in: minValue...maxValue){
+        } minimumValueLabel: {
+            Text("\(Int(minValue))")
+        } maximumValueLabel: {
+            Text("\(Int(maxValue))")
+        }.fontWeight(.bold)
+    }
 }
