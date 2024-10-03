@@ -17,6 +17,7 @@
 		F5EDBD242CAEB9420019DE02 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD232CAEB9420019DE02 /* NumberView.swift */; };
 		F5EDBD282CAEC2720019DE02 /* MarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD272CAEC2720019DE02 /* MarksView.swift */; };
 		F5EDBD2A2CAECC9E0019DE02 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD292CAECC9E0019DE02 /* Mark.swift */; };
+		F5EDBD2C2CAECEEA0019DE02 /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD2B2CAECEEA0019DE02 /* GameStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F5EDBD232CAEB9420019DE02 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		F5EDBD272CAEC2720019DE02 /* MarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarksView.swift; sourceTree = "<group>"; };
 		F5EDBD292CAECC9E0019DE02 /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
+		F5EDBD2B2CAECEEA0019DE02 /* GameStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				F5EDBD252CAEBD090019DE02 /* Views */,
 				F5EDBD0F2CAE8F710019DE02 /* Assets.xcassets */,
 				F5EDBD112CAE8F710019DE02 /* Preview Content */,
+				F5EDBD2B2CAECEEA0019DE02 /* GameStore.swift */,
 			);
 			path = iOSApp;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5EDBD2A2CAECC9E0019DE02 /* Mark.swift in Sources */,
+				F5EDBD2C2CAECEEA0019DE02 /* GameStore.swift in Sources */,
 				F5EDBD222CAEB8D70019DE02 /* BackgroundView.swift in Sources */,
 				F5EDBD202CAEB64D0019DE02 /* RoundedImageView.swift in Sources */,
 				F5EDBD282CAEC2720019DE02 /* MarksView.swift in Sources */,

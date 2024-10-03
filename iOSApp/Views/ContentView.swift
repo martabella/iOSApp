@@ -10,28 +10,30 @@ import SwiftUI
 struct ContentView: View {
     @State var alertIsVisible = false
     @State var sliderValue = 50.0
-    @State var game = Game()
+    
+    @EnvironmentObject private var gameStore:GameStore
+    
     var body: some View {
         ZStack {
-            BackgroundView(game: $game)
+            BackgroundView()
             VStack {
                 Text("🎯🎯🎯🎯")
                     .font(.largeTitle)
                     .padding(.bottom)
-                Text("\(game.target)")
+                Text("\(gameStore.game.target)")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .tracking(/*@START_MENU_TOKEN@*/-1.0/*@END_MENU_TOKEN@*/)
                 SliderView(value: $sliderValue, minValue: 0, maxValue: 100)
                 Button("Try"){
-                    game.points(sliderValue: Int(sliderValue.rounded()))
+                    gameStore.game.points(sliderValue: Int(sliderValue.rounded()))
                     alertIsVisible = true
                     
                 }.alert(isPresented: $alertIsVisible){
                     Alert(title: Text("Congratulations"),
-                          message: Text("The slider value is \(Int(sliderValue.rounded())) \n You scored \(game.points) points \n 🎉🎉🎉🎉"),
+                          message: Text("The slider value is \(Int(sliderValue.rounded())) \n You scored \(gameStore.game.points) points \n 🎉🎉🎉🎉"),
                           dismissButton:.default(Text("OK")){
-                        game.startNewRound()
+                        gameStore.game.startNewRound()
                         sliderValue = 50.0
                     })
                 }
