@@ -16,6 +16,7 @@
 		F5EDBD222CAEB8D70019DE02 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD212CAEB8D70019DE02 /* BackgroundView.swift */; };
 		F5EDBD242CAEB9420019DE02 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD232CAEB9420019DE02 /* NumberView.swift */; };
 		F5EDBD282CAEC2720019DE02 /* MarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD272CAEC2720019DE02 /* MarksView.swift */; };
+		F5EDBD2A2CAECC9E0019DE02 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EDBD292CAECC9E0019DE02 /* Mark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F5EDBD212CAEB8D70019DE02 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		F5EDBD232CAEB9420019DE02 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		F5EDBD272CAEC2720019DE02 /* MarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarksView.swift; sourceTree = "<group>"; };
+		F5EDBD292CAECC9E0019DE02 /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				F5EDBD1B2CAEB3830019DE02 /* Game.swift */,
+				F5EDBD292CAECC9E0019DE02 /* Mark.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5EDBD2A2CAECC9E0019DE02 /* Mark.swift in Sources */,
 				F5EDBD222CAEB8D70019DE02 /* BackgroundView.swift in Sources */,
 				F5EDBD202CAEB64D0019DE02 /* RoundedImageView.swift in Sources */,
 				F5EDBD282CAEC2720019DE02 /* MarksView.swift in Sources */,

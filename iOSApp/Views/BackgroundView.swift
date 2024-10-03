@@ -13,7 +13,9 @@ struct BackgroundView: View {
     var body: some View {
         VStack {
             HStack{
-                RoundedImageView(imageName: "arrow.clockwise")
+                Button(action: {game.restartGame()}){
+                    RoundedImageView(imageName: "arrow.clockwise")
+                }
                 Spacer()
                 Button(action: {markIsVisible = true}){
                     RoundedImageView(imageName: "list.dash")
@@ -23,7 +25,7 @@ struct BackgroundView: View {
             HStack{
                 NumberView(title: "SCORE", text: "\(game.score)")
                 Spacer()
-                NumberView(title: "ROUND", text: "1")
+                NumberView(title: "ROUND", text: "\(game.round)")
             }
         }.padding()
             .background(Color("BackgroundColor"))
